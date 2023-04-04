@@ -1,0 +1,107 @@
+.header {
+	display: flex;
+
+	justify-content: space-between;
+
+	&__img {
+		background-color: aquamarine;
+	}
+
+	&__content {
+		justify-self: flex-end;
+		margin-top: 50px;
+		margin-right: 140px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		.nav__login {
+			align-self: flex-end;
+
+			&_btn {
+				color: $grey;
+				font-size: 14px;
+				background-color: transparent;
+				border: none;
+				padding: 9px 10px;
+				cursor: pointer;
+
+				&:hover {
+                    border: 0.75px solid $yellow;
+				}
+			}
+		}
+
+		.nav__menu {
+			margin-top: 26px;
+			display: flex;
+			align-items: center;
+			gap: 55px;
+			list-style: none;
+
+			&_item .link {
+                text-decoration: none;
+				color: $dark;
+                padding:  10px 20px;
+				font-size: 18px;
+				transition: 0.3s all ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: $grey;
+                    border: 0.75px solid $dark;
+                }
+			}
+		}
+
+		.cta {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+
+			.header__h1 {
+				margin-top: 210px;
+				color: $dark;
+				text-align: center;
+				font-size: 38px;
+                font-weight: 400;
+				letter-spacing: -0.76px;
+				line-height: 55px;
+				max-width: 680px;
+				margin-bottom: 40px;
+			}
+
+			.header__decor {
+				align-self: center;
+				margin-bottom: 70px;
+			}
+
+			.header__buttons {
+				align-self: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 44px;
+			}
+
+			.header__btn {
+				font-family: $font-base;
+				background-color: transparent;
+				cursor: pointer;
+				color: $dark;
+				width: 310px;
+				height: 120px;
+				font-size: 36px;
+				font-weight: 300;
+				text-align: center;
+				line-height: 45px;
+				border: 0.75px solid $dark;
+				transition: 0.3s all ease-in-out;
+
+				&:hover {
+					color: $grey;
+				}
+			}
+		}
+	}
+}

@@ -1,6 +1,8 @@
 @import './settings/normalize';
 @import './settings/fonts';
 @import './settings/colors';
+@import './components/navheader';
+
 
 * {
 	padding: 0;
@@ -9,10 +11,11 @@
 }
 
 body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
 	font-family: $font-base;
 	color: $dark;
+}
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
 }

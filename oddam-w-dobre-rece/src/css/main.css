@@ -1,3 +1,96 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__img {
+  background-color: aquamarine;
+}
+.header__content {
+  justify-self: flex-end;
+  margin-top: 50px;
+  margin-right: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header__content .nav__login {
+  align-self: flex-end;
+}
+.header__content .nav__login_btn {
+  color: #737373;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  padding: 9px 10px;
+  cursor: pointer;
+}
+.header__content .nav__login_btn:hover {
+  border: 0.75px solid #FAD648;
+}
+.header__content .nav__menu {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  list-style: none;
+}
+.header__content .nav__menu_item .link {
+  text-decoration: none;
+  color: #3C3C3C;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: 0.3s all ease-in-out;
+  cursor: pointer;
+}
+.header__content .nav__menu_item .link:hover {
+  color: #737373;
+  border: 0.75px solid #3C3C3C;
+}
+.header__content .cta {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.header__content .cta .header__h1 {
+  margin-top: 210px;
+  color: #3C3C3C;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: -0.76px;
+  line-height: 55px;
+  max-width: 680px;
+  margin-bottom: 40px;
+}
+.header__content .cta .header__decor {
+  align-self: center;
+  margin-bottom: 70px;
+}
+.header__content .cta .header__buttons {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+.header__content .cta .header__btn {
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  color: #3C3C3C;
+  width: 310px;
+  height: 120px;
+  font-size: 36px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 45px;
+  border: 0.75px solid #3C3C3C;
+  transition: 0.3s all ease-in-out;
+}
+.header__content .cta .header__btn:hover {
+  color: #737373;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,10 +98,11 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   font-family: "Open Sans", sans-serif;
   color: #3C3C3C;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */
