@@ -39,7 +39,14 @@ const NavHeader = () => {
 						</Scroll>
 					</li>
 					<li className="nav__menu_item">
-						<Scroll className="link" to="/">
+						<Scroll
+							className="link"
+							to="about-us"
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={600}
+						>
 							O nas
 						</Scroll>
 					</li>

@@ -1,7 +1,7 @@
 const About = () => {
 	return (
 		<>
-			<section className="about">
+			<section className="about" id="about-us">
 				<div className="about__box">
 					<div className="about__box_head">
 						<p className="about__box_head_title">O nas</p>
@@ -27,7 +27,6 @@ const About = () => {
 				</div>
 
 				<div className="about__img"></div>
-
 			</section>
 		</>
 	);
