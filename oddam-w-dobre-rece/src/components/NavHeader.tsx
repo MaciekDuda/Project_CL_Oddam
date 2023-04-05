@@ -21,7 +21,7 @@ const NavHeader = () => {
 						<Link className='link'  to="/">Start</Link>
 					</li>
 					<li className="nav__menu_item">
-						<Scroll className='link' to="/">O co chodzi?</Scroll>
+						<Scroll className='link' to="simple-steps" spy={true} smooth={true} offset={-100} duration={600}>O co chodzi?</Scroll>
 					</li>
 					<li className="nav__menu_item">
 						<Scroll className='link' to="/">O nas</Scroll>
