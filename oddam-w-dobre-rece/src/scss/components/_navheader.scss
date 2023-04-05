@@ -38,23 +38,24 @@
 		}
 
 		.nav__menu {
+			width: 120%;
 			margin-top: 26px;
 			display: flex;
 			align-items: flex-end;
 			gap: 55px;
+			justify-content: flex-end;
 			list-style: none;
 
 			&_item .link {
 				text-decoration: none;
 				color: $dark;
-				padding: 10px 10px;
+				padding: 10px;
 				font-size: 18px;
 				transition: 0.3s all ease-in-out;
 				border: 0.75px solid transparent;
 				cursor: pointer;
 
 				&:hover {
-					outline: none;
 					color: $grey;
 					border: 0.75px solid $dark;
 				}
