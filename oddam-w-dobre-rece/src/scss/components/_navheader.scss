@@ -3,9 +3,13 @@
 
 	justify-content: space-between;
 
-	&__img {
-		background-color: aquamarine;
-	}
+	
+	   &__img {
+        width: 885px;
+        height: 963px;
+        object-fit: cover;
+        object-position: 100% 0;
+    }
 
 	&__content {
 		justify-self: flex-end;
@@ -25,9 +29,10 @@
 				border: none;
 				padding: 9px 10px;
 				cursor: pointer;
-
+				
 				&:hover {
-                    border: 0.75px solid $yellow;
+					border: 0.75px solid $yellow;
+					outline: none;
 				}
 			}
 		}
@@ -40,31 +45,32 @@
 			list-style: none;
 
 			&_item .link {
-                text-decoration: none;
+				text-decoration: none;
 				color: $dark;
-                padding:  10px 20px;
+				padding: 10px 20px;
 				font-size: 18px;
 				transition: 0.3s all ease-in-out;
-                cursor: pointer;
-
-                &:hover {
-                    color: $grey;
-                    border: 0.75px solid $dark;
-                }
+				cursor: pointer;
+				
+				&:hover {
+					outline: none;
+					color: $grey;
+					border: 0.75px solid $dark;
+				}
 			}
 		}
 
 		.cta {
-            display: flex;
-            flex-direction: column;
-            align-self: flex-start;
+			display: flex;
+			flex-direction: column;
+			align-self: flex-start;
 
 			.header__h1 {
 				margin-top: 210px;
 				color: $dark;
 				text-align: center;
 				font-size: 38px;
-                font-weight: 400;
+				font-weight: 400;
 				letter-spacing: -0.76px;
 				line-height: 55px;
 				max-width: 680px;

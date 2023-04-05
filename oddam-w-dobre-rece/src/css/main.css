@@ -3,7 +3,12 @@
   justify-content: space-between;
 }
 .header__img {
-  background-color: aquamarine;
+  width: 885px;
+  height: 963px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 0;
+     object-position: 100% 0;
 }
 .header__content {
   justify-self: flex-end;
@@ -26,6 +31,7 @@
 }
 .header__content .nav__login_btn:hover {
   border: 0.75px solid #FAD648;
+  outline: none;
 }
 .header__content .nav__menu {
   margin-top: 26px;
@@ -43,6 +49,7 @@
   cursor: pointer;
 }
 .header__content .nav__menu_item .link:hover {
+  outline: none;
   color: #737373;
   border: 0.75px solid #3C3C3C;
 }

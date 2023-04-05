@@ -1,37 +1,37 @@
 {
-  "name": "oddam-w-dobre-rece",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "start": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/material": "^5.11.15",
-    "@popperjs/core": "^2.11.7",
-    "bootstrap": "^5.2.3",
-    "i": "^0.3.7",
-    "node-sass": "^8.0.0",
-    "normalize-scss": "^7.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0",
-    "react-scroll": "^1.8.9"
-  },
-  "devDependencies": {
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@types/react-scroll": "^1.8.6",
-    "@vitejs/plugin-react": "^3.1.0",
-    "file-loader": "^6.2.0",
-    "sass": "^1.60.0",
-    "typescript": "^4.9.3",
-    "vite": "^4.2.0"
-  }
+	"name": "oddam-w-dobre-rece",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"start": "vite",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.10.6",
+		"@emotion/styled": "^11.10.6",
+		"@mui/material": "^5.11.15",
+		"@popperjs/core": "^2.11.7",
+		"bootstrap": "^5.2.3",
+		"i": "^0.3.7",
+		"node-sass": "^8.0.0",
+		"normalize-scss": "^7.0.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.10.0",
+		"react-scroll": "^1.8.9"
+	},
+	"devDependencies": {
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.11",
+		"@types/react-scroll": "^1.8.6",
+		"@vitejs/plugin-react": "^3.1.0",
+		"file-loader": "^6.2.0",
+		"sass": "^1.60.0",
+		"typescript": "^4.9.3",
+		"vite": "^4.2.0"
+	}
 }

@@ -4,7 +4,7 @@ import { Link as Scroll } from 'react-scroll';
 const NavHeader = () => {
 	return (
 		<section className="header">
-			<img src="" alt="basket of home stuff" className="header__img" />
+			<img src='./src/assets/Home-Hero-Image.jpg' alt="basket of home stuff" className="header__img" />
 
 			<div className="header__content">
 				<div className="nav__login">
@@ -37,7 +37,7 @@ const NavHeader = () => {
 				<h1 className="header__h1">
 					Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce
 				</h1>
-				<img src="" alt="decor" className="header__decor" />
+				<img src="./src/assets/Decoration.svg" alt="decor" className="header__decor" />
 
 				<div className="header__buttons">
 					<button className="header__btn">
