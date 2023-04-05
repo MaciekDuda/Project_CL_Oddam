@@ -5,8 +5,8 @@
 	justify-content: center;
 	align-items: center;
 	background-color: $yellow;
-    /*ISSUE !*/
-	background-image: url('../../assets/3-Columns-Background.png'); 
+	/*ISSUE !*/
+	background-image: url('../../assets/3-Columns-Background.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -23,6 +23,7 @@
 			justify-content: center;
 			align-items: center;
 			max-width: 334px;
+			text-align: center;
 
 			.column_number {
 				font-size: 90px;
@@ -33,13 +34,16 @@
 				font-size: 18px;
 				margin: 25px 0;
 				text-transform: uppercase;
+				line-height: 30px;
+				letter-spacing: 0.36px;
 			}
 
 			.column_text {
 				font-family: $font-alt;
 				font-weight: 300;
 				font-size: 16px;
-				text-align: center;
+				line-height: 18px;
+				letter-spacing: 0.32px;
 			}
 		}
 	}
