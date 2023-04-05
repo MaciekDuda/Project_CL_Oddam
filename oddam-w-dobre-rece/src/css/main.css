@@ -98,6 +98,48 @@
   color: #737373;
 }
 
+.three-columns {
+  width: 100%;
+  height: 384px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FAD648;
+  /*ISSUE !*/
+  background-image: url("../../assets/3-Columns-Background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.three-columns .columns_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 286px;
+}
+.three-columns .columns_box .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 334px;
+}
+.three-columns .columns_box .column .column_number {
+  font-size: 90px;
+  font-weight: 300;
+}
+.three-columns .columns_box .column .column_title {
+  font-size: 18px;
+  margin: 25px 0;
+  text-transform: uppercase;
+}
+.three-columns .columns_box .column .column_text {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
+}
+
 * {
   padding: 0;
   margin: 0;
