@@ -4,7 +4,11 @@ import { Link as Scroll } from 'react-scroll';
 const NavHeader = () => {
 	return (
 		<section className="header">
-			<img src='./src/assets/Home-Hero-Image.jpg' alt="basket of home stuff" className="header__img" />
+			<img
+				src="./src/assets/Home-Hero-Image.jpg"
+				alt="basket of home stuff"
+				className="header__img"
+			/>
 
 			<div className="header__content">
 				<div className="nav__login">
@@ -18,36 +22,59 @@ const NavHeader = () => {
 
 				<ul className="nav__menu">
 					<li className="nav__menu_item">
-						<Link className='link'  to="/">Start</Link>
+						<Link className="link" to="/">
+							Start
+						</Link>
 					</li>
 					<li className="nav__menu_item">
-						<Scroll className='link' to="simple-steps" spy={true} smooth={true} offset={-100} duration={600}>O co chodzi?</Scroll>
+						<Scroll
+							className="link"
+							to="simple-steps"
+							spy={true}
+							smooth={true}
+							offset={-100}
+							duration={600}
+						>
+							O co chodzi?
+						</Scroll>
 					</li>
 					<li className="nav__menu_item">
-						<Scroll className='link' to="/">O nas</Scroll>
+						<Scroll className="link" to="/">
+							O nas
+						</Scroll>
 					</li>
 					<li className="nav__menu_item">
-						<Scroll className='link' to="/">Fundacja i organizacje</Scroll>
+						<Scroll className="link" to="/">
+							Fundacja i organizacje
+						</Scroll>
 					</li>
 					<li className="nav__menu_item">
-						<Scroll className='link' to="/">Kontakt</Scroll>
+						<Scroll className="link" to="/">
+							Kontakt
+						</Scroll>
 					</li>
 				</ul>
-			<div className='cta'>
-				<h1 className="header__h1">
-					Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce
-				</h1>
-				<img src="./src/assets/Decoration.svg" alt="decor" className="header__decor" />
+				<div className="cta">
+					<h1 className="header__h1">
+						Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce
+					</h1>
+					<img
+						src="./src/assets/Decoration.svg"
+						alt="decor"
+						className="header__decor"
+					/>
 
-				<div className="header__buttons">
-					<button className="header__btn">
-						Oddaj <br /> rzeczy
-					</button>
-					<button className="header__btn">
-						Zorganizuj <br /> zbiórkę
-					</button>
+					<div className="header__buttons">
+						<Link to="/logowanie">
+							<button className="header__btn">
+								Oddaj <br /> rzeczy
+							</button>
+							<button className="header__btn">
+								Zorganizuj <br /> zbiórkę
+							</button>
+						</Link>
+					</div>
 				</div>
-			</div>
 			</div>
 		</section>
 	);
