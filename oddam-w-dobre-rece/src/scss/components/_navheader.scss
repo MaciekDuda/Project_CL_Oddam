@@ -3,13 +3,12 @@
 
 	justify-content: space-between;
 
-	
-	   &__img {
-        width: 885px;
-        height: 963px;
-        object-fit: cover;
-        object-position: 100% 0;
-    }
+	&__img {
+		width: 885px;
+		height: 963px;
+		object-fit: cover;
+		object-position: 100% 0;
+	}
 
 	&__content {
 		justify-self: flex-end;
@@ -29,7 +28,8 @@
 				border: none;
 				padding: 9px 10px;
 				cursor: pointer;
-				
+				border: 0.75px solid transparent;
+
 				&:hover {
 					border: 0.75px solid $yellow;
 					outline: none;
@@ -50,8 +50,9 @@
 				padding: 10px 20px;
 				font-size: 18px;
 				transition: 0.3s all ease-in-out;
+				border: 0.75px solid transparent;
 				cursor: pointer;
-				
+
 				&:hover {
 					outline: none;
 					color: $grey;

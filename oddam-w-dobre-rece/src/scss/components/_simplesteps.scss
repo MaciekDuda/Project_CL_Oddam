@@ -41,12 +41,12 @@
 				position: relative;
 				/*ISSUE*/
 				&::after {
+					position: absolute;
 					content: '';
 					display: block;
 					width: 100%;
 					height: 1px;
 					border-bottom-style: 1px solid $dark;
-					position: absolute;
 					bottom: 0;
 				}
 			}
