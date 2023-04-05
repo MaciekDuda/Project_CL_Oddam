@@ -40,14 +40,14 @@
 		.nav__menu {
 			margin-top: 26px;
 			display: flex;
-			align-items: center;
+			align-items: flex-end;
 			gap: 55px;
 			list-style: none;
 
 			&_item .link {
 				text-decoration: none;
 				color: $dark;
-				padding: 10px 20px;
+				padding: 10px 10px;
 				font-size: 18px;
 				transition: 0.3s all ease-in-out;
 				border: 0.75px solid transparent;
