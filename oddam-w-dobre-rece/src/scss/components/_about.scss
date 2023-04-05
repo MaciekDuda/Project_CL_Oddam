@@ -1,0 +1,43 @@
+.about {
+	width: 100%;
+	display: flex;
+
+	&__box {
+        width: 50%;
+		background-color: $light-grey;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// justify-content: space-around;
+		padding: 50px 150px 20px;
+
+		&_head {
+			text-align: center;
+            margin-top: 80px;
+
+			&_title {
+				font-size: 38px;
+				padding: 20px 0;
+			}
+		}
+
+        &_text {
+            font-size: 30px;
+            text-align: center;
+            padding: 50px 0px;
+        }
+
+		&_sign {
+			align-self: flex-end;
+            margin-bottom: 50px;
+		}
+	}
+
+	&__img {
+		width: 50%;
+        background-image: url('/People.jpg');
+        background-position: center;
+        background-size: cover;
+
+	}
+}

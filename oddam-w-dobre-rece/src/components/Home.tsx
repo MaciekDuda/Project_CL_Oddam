@@ -1,3 +1,4 @@
+import About from "./About";
 import NavHeader from "./NavHeader";
 import SimpleSteps from "./SimpleSteps";
 import ThreeColumns from "./ThreeColumns";
@@ -9,6 +10,7 @@ const Home = () => {
             <NavHeader/>
             <ThreeColumns/>
             <SimpleSteps/>
+            <About/>
         </>
     );
 }

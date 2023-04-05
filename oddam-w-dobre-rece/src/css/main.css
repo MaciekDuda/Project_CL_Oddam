@@ -150,7 +150,7 @@
 .simple-steps {
   width: 100%;
   height: 624px;
-  margin: 50px 0;
+  margin: 50px 0 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -209,10 +209,46 @@
   line-height: 45px;
   border: 0.75px solid #3C3C3C;
   transition: 0.3s all ease-in-out;
-  margin-top: 35px;
+  margin: 35px auto;
 }
 .simple-steps .process__btn:hover {
   color: #737373;
+}
+
+.about {
+  width: 100%;
+  display: flex;
+}
+.about__box {
+  width: 50%;
+  background-color: #F0F1F1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 150px 20px;
+}
+.about__box_head {
+  text-align: center;
+  margin-top: 80px;
+}
+.about__box_head_title {
+  font-size: 38px;
+  padding: 20px 0;
+}
+.about__box_text {
+  font-size: 30px;
+  text-align: center;
+  padding: 50px 0px;
+}
+.about__box_sign {
+  align-self: flex-end;
+  margin-bottom: 50px;
+}
+.about__img {
+  width: 50%;
+  background-image: url("/People.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 * {
