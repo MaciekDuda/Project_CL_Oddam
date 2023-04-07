@@ -251,6 +251,98 @@
   background-size: cover;
 }
 
+.help {
+  width: 100%;
+  margin: 50px auto;
+}
+.help__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.help__box_head {
+  text-align: center;
+}
+.help__box_head_title {
+  font-size: 38px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.help__box_head .decor {
+  padding: 20px 0 0;
+}
+.help__box_orgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.help__box_orgs_buttons {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.help__box_orgs_buttons .org_btn {
+  font-family: "Open Sans", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  color: #3C3C3C;
+  width: 205px;
+  height: 80px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 24px;
+  border: 0.75px solid transparent;
+  transition: 0.3s all ease-in-out;
+  margin: 70px auto;
+}
+.help__box_orgs_buttons .org_btn:hover {
+  color: #737373;
+  border: 0.75px solid #3C3C3C;
+}
+.help__box_orgs_desc {
+  max-width: 640px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+}
+.help__box_orgs_list {
+  width: 100%;
+  display: block;
+  margin: 33px 0;
+  list-style: none;
+}
+.help__box_orgs_list .org_item {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+}
+.help__box_orgs_list .org_item .info {
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+.help__box_orgs_list .org_item .needs {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+  align-self: flex-end;
+}
+.help__box_orgs .pagination {
+  display: flex;
+}
+.help__box_orgs .pagination p {
+  margin: 0 5px;
+  padding: 10px;
+  border: 0.75px solid transparent;
+  transition: 0.3s all ease-in-out;
+}
+.help__box_orgs .pagination p:hover {
+  color: #737373;
+  border: 0.75px solid #3C3C3C;
+}
+
 * {
   padding: 0;
   margin: 0;

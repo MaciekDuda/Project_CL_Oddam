@@ -1,0 +1,108 @@
+.help {
+	width: 100%;
+	
+    margin: 50px auto;
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&_head {
+			text-align: center;
+
+			&_title {
+				font-size: 38px;
+				font-weight: 400;
+				text-align: center;
+				margin-bottom: 10px;
+			}
+
+			.decor {
+				padding: 20px 0 0;
+			}
+		}
+
+		&_orgs {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+            width: 80%;
+
+			&_buttons {
+				display: flex;
+				justify-content: center;
+				gap: 150px;
+
+				.org_btn {
+					font-family: $font-base;
+					background-color: transparent;
+					cursor: pointer;
+					color: $dark;
+					width: 205px;
+					height: 80px;
+					font-size: 24px;
+					text-align: center;
+					line-height: 24px;
+					border: 0.75px solid transparent;
+					transition: 0.3s all ease-in-out;
+					margin: 70px auto;
+
+					&:hover {
+						color: $grey;
+						border: 0.75px solid $dark;
+					}
+				}
+			}
+
+			&_desc {
+				max-width: 640px;
+				text-align: center;
+				font-size: 22px;
+				line-height: 30px;
+			}
+
+            &_list {
+                width: 100%;
+                display: block;
+                margin: 33px 0;
+                list-style: none;
+
+                .org_item {
+                    padding: 10px 0;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .info {
+                        padding: 5px 0;
+                        margin-bottom: 20px;
+                    }
+                    .needs {
+                        font-family: $font-alt;
+                        font-weight: 300;
+                        align-self: flex-end;
+                    }
+                }
+
+            }
+
+            .pagination {
+                display: flex;
+                
+                p {
+                    margin: 0 5px;
+                    padding: 10px;
+                    border: 0.75px solid transparent;
+                    transition: 0.3s all ease-in-out;
+
+                    &:hover {
+                        color: $grey;
+						border: 0.75px solid $dark;
+                    }
+                }
+            }
+		}
+	}
+}

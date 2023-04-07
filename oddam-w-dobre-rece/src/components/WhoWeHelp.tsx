@@ -1,7 +1,7 @@
 const WhoWeHelp = () => {
 	return (
 		<>
-			<section className="help">
+			<section className="help" id='help'>
 				<div className="help__box">
 					<div className="help__box_head">
 						<p className="help__box_head_title">Komu pomagamy?</p>
@@ -21,19 +21,30 @@ const WhoWeHelp = () => {
 								pozarządowym
 							</button>
 							<button className="org_btn">
-								lokalnym <br />
+								Lokalnym <br />
 								zbiórkom
 							</button>
 						</div>
 
                         <div className="help__box_orgs_desc">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ipsa incidunt iusto voluptate assumenda et? Dicta laborum quidem voluptas doloremque voluptates voluptatum corporis explicabo, minus molestias. Libero alias, asperiores placeat accusamus in quidem vero amet!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ipsa incidunt iusto voluptate assumenda et? Dicta laborum quidem voluptas doloremque voluptates voluptatum corporis explicabo, minus molestias. Libero alias amet!</p>
                         </div>
 
                         <ul className="help__box_orgs_list">
-                            <li className="org_item">111111AAAAA <hr /></li>
-                            <li className="org_item">222222BBBBB <hr /></li>
-                            <li className="org_item">333333CCCCC</li>
+                            <li className="org_item"><h3>Przykładowa fundacja "Pokój na świecie"</h3>
+                            <p className="needs">Stingery, Javeliny, Leopardy</p>
+                            <p className="info">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                 <hr /></li>
+                            <li className="org_item"><h3>Przykładowa fundacja "Pokój na świecie"</h3>
+                            <p className="needs">Stingery, Javeliny, Leopardy</p>
+                            <p className="info">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                 <hr /></li>
+                            <li className="org_item"><h3>Przykładowa fundacja "Pokój na świecie"</h3>
+                            <p className="needs">Stingery, Javeliny, Leopardy</p>
+                            <p className="info">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                                 <hr /></li>
+                         
+                            
                         </ul>
 
                         <div className="pagination">
