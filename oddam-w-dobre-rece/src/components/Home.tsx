@@ -2,6 +2,7 @@ import About from "./About";
 import NavHeader from "./NavHeader";
 import SimpleSteps from "./SimpleSteps";
 import ThreeColumns from "./ThreeColumns";
+import WhoWeHelp from "./WhoWeHelp";
 
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
             <ThreeColumns/>
             <SimpleSteps/>
             <About/>
+            <WhoWeHelp/>
         </>
     );
 }
