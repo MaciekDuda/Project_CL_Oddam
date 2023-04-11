@@ -1,4 +1,5 @@
 import About from "./About";
+import Contact from "./Contact";
 import NavHeader from "./NavHeader";
 import SimpleSteps from "./SimpleSteps";
 import ThreeColumns from "./ThreeColumns";
@@ -13,6 +14,7 @@ const Home = () => {
             <SimpleSteps/>
             <About/>
             <WhoWeHelp/>
+            <Contact/>
         </>
     );
 }

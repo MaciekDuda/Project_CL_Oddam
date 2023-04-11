@@ -6,6 +6,7 @@
 @import './components/simplesteps';
 @import './components/about';
 @import './components/whowehelp';
+@import './components/contact';
 
 
 * {
@@ -19,10 +20,7 @@ body {
 	color: $dark;
 }
 
-.container{
-    max-width: 1600px;
-    margin: 0 auto;
-}
+
 
 Link {
 	text-decoration: none;

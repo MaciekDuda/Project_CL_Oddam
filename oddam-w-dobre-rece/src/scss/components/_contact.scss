@@ -1,0 +1,123 @@
+.contact {
+	width: 100%;
+
+	&__box {
+		display: flex;
+		position: relative;
+		height: 950px;
+		background-image: url('/BG-Contact-Img.jpg');
+		background-size: cover;
+		z-index: 0;
+
+		&_shadow {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: -10;
+			background-color: rgba($color: #ffffff, $alpha: 0.85);
+			z-index: -10;
+		}
+
+		&_form {
+			max-width: 528px;
+			max-height: 300px;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			left: 60%;
+			top: 15%;
+
+			label {
+				font-size: 16px;
+				font-weight: 600;
+				padding: 10px 0;
+			}
+
+			input,
+			textarea {
+				padding: 5px 0;
+				margin-bottom: 20px;
+				font-size: 18px;
+				border-style: none;
+				outline: none;
+				border-bottom: 1px solid $grey;
+				background-color: transparent;
+			}
+
+			textarea {
+				height: 180px;
+			}
+
+			button {
+				width: 150px;
+				padding: 15px 20px;
+				border: 1px solid $grey;
+				background-color: transparent;
+                font-size: 18px;
+				align-self: flex-end;
+				cursor: pointer;
+				transition: 0.3 all ease-out;
+
+				&:hover {
+					color: $grey;
+				}
+			}
+
+			&_head {
+				text-align: center;
+				margin-bottom: 60px;
+
+				&_title {
+					font-size: 38px;
+					font-weight: 400;
+					text-align: center;
+					margin-bottom: 10px;
+				}
+
+				.decor {
+					padding: 20px 0 0;
+				}
+			}
+
+			&_inputs {
+				display: flex;
+				justify-content: space-between;
+				margin: 10px 0;
+
+				.contact_input {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+					padding-right: 10px;
+				}
+				.contact_input:last-child {
+					padding: 0;
+				}
+			}
+			&_textarea {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: stretch;
+			}
+		}
+		.footer {
+			width: 69%;
+			position: absolute;
+			top: 95%;
+			left: 50%;
+			transform: translate(-50%);
+			display: flex;
+			align-items: flex-end;
+			justify-content: center;
+
+			p {
+				color: $grey;
+				margin: auto;
+			}
+			img {
+				padding: 0 10px;
+			}
+		}
+	}
+}
