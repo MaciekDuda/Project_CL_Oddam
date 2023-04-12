@@ -45,7 +45,7 @@ const SimpleSteps = () => {
 					</div>
 				</div>
 
-				<Link to="/logowanie">
+				<Link to="/login">
 					<button className="process__btn">
 						Oddaj <br /> rzeczy
 					</button>

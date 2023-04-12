@@ -83,7 +83,7 @@ const NavHeader = () => {
 					/>
 
 					<div className="header__buttons">
-						<Link to="/logowanie">
+						<Link to="/login">
 							<button className="header__btn">
 								Oddaj <br /> rzeczy
 							</button>

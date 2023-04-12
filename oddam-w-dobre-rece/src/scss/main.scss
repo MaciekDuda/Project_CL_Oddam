@@ -7,7 +7,9 @@
 @import './components/about';
 @import './components/whowehelp';
 @import './components/contact';
-
+@import './components/register';
+@import './components/login';
+@import './components/logout';
 
 * {
 	padding: 0;
@@ -21,7 +23,28 @@ body {
 }
 
 
-
 Link {
 	text-decoration: none;
+}
+
+label {
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 0;
+}
+
+input,
+textarea {
+	padding: 5px 0;
+	margin-bottom: 20px;
+	font-size: 18px;
+	border-style: none;
+	outline: none;
+	border-bottom: 1px solid $grey;
+	background-color: transparent;
+}
+
+.container {
+	width: 1600px;
+	margin: 0 auto;
 }

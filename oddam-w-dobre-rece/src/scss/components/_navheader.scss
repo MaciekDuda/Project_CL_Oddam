@@ -29,6 +29,7 @@
 				padding: 9px 10px;
 				cursor: pointer;
 				border: 0.75px solid transparent;
+				transition: .3s all ease-out;
 
 				&:hover {
 					border: 0.75px solid $yellow;
@@ -57,7 +58,7 @@
 
 				&:hover {
 					color: $grey;
-					border: 0.75px solid $dark;
+					border: 0.75px solid $grey;
 				}
 			}
 		}

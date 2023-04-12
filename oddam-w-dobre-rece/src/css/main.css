@@ -29,6 +29,7 @@
   padding: 9px 10px;
   cursor: pointer;
   border: 0.75px solid transparent;
+  transition: 0.3s all ease-out;
 }
 .header__content .nav__login_btn:hover {
   border: 0.75px solid #FAD648;
@@ -54,7 +55,7 @@
 }
 .header__content .nav__menu_item .link:hover {
   color: #737373;
-  border: 0.75px solid #3C3C3C;
+  border: 0.75px solid #737373;
 }
 .header__content .cta {
   display: flex;
@@ -453,6 +454,173 @@
   padding: 0 10px;
 }
 
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.register__top_menu {
+  align-self: flex-end;
+  padding: 50px 0px;
+}
+.register__top_menu_btn {
+  color: #737373;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  padding: 9px 10px;
+  cursor: pointer;
+  border: 0.75px solid transparent;
+  transition: 0.3s all ease-out;
+}
+.register__top_menu_btn:hover {
+  border: 0.75px solid #FAD648;
+  outline: none;
+}
+.register__box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+.register__box_inputs {
+  width: 384px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F0F1F1;
+}
+.register__box_buttons {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.register__box_buttons button {
+  background: none;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 13px;
+  border: 1px solid transparent;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+}
+.register__box_buttons button:hover {
+  border: 1px solid #737373;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.login__top_menu {
+  align-self: flex-end;
+  padding: 50px 0px;
+}
+.login__top_menu_btn {
+  color: #737373;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  padding: 9px 10px;
+  cursor: pointer;
+  border: 0.75px solid transparent;
+  transition: 0.3s all ease-out;
+}
+.login__top_menu_btn:hover {
+  border: 0.75px solid #FAD648;
+  outline: none;
+}
+.login__box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+.login__box_inputs {
+  width: 384px;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F0F1F1;
+}
+.login__box_buttons {
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.login__box_buttons button {
+  background: none;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 13px;
+  border: 1px solid transparent;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+}
+.login__box_buttons button:hover {
+  border: 1px solid #737373;
+}
+
+.logout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logout__top_menu {
+  align-self: flex-end;
+  padding: 50px 0px;
+}
+.logout__top_menu_btn {
+  color: #737373;
+  font-size: 14px;
+  background-color: transparent;
+  border: none;
+  padding: 9px 10px;
+  cursor: pointer;
+  border: 0.75px solid transparent;
+  transition: 0.3s all ease-out;
+}
+.logout__top_menu_btn:hover {
+  border: 0.75px solid #FAD648;
+  outline: none;
+}
+.logout__box {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+}
+.logout__box_buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logout__box_buttons button {
+  background: none;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 13px;
+  border: 1px solid transparent;
+  transition: 0.3s all ease-out;
+  cursor: pointer;
+}
+.logout__box_buttons button:hover {
+  border: 1px solid #737373;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -466,4 +634,26 @@ body {
 
 Link {
   text-decoration: none;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+input,
+textarea {
+  padding: 5px 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  border-style: none;
+  outline: none;
+  border-bottom: 1px solid #737373;
+  background-color: transparent;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

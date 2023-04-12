@@ -1,0 +1,55 @@
+.logout {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	&__top_menu {
+		align-self: flex-end;
+		padding: 50px 0px;
+
+		&_btn {
+			color: $grey;
+			font-size: 14px;
+			background-color: transparent;
+			border: none;
+			padding: 9px 10px;
+			cursor: pointer;
+			border: 0.75px solid transparent;
+            transition: .3s all ease-out;
+
+			&:hover {
+				border: 0.75px solid $yellow;
+				outline: none;
+			}
+		}
+	}
+
+	&__box {
+		display: flex;
+		flex-direction: column;
+		width: 500px;
+		align-items: center;
+
+		&_buttons {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			button {
+				background: none;
+				font-size: 18px;
+				font-weight: 300;
+				padding: 13px;
+				border: 1px solid transparent;
+				transition: 0.3s all ease-out;
+				cursor: pointer;
+
+				&:hover {
+					border: 1px solid $grey;
+				}
+			}
+		}
+	}
+}
