@@ -20,11 +20,11 @@ const WhoWeHelp = () => {
 		console.error('Error');
 	};
 
+	const WhoWeHelpList = 'https://zfvfypwezhwsfphrfcws.supabase.co/storage/v1/object/sign/organisations/organisations.json?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJvcmdhbmlzYXRpb25zL29yZ2FuaXNhdGlvbnMuanNvbiIsImlhdCI6MTY4MTQ4NDMxOCwiZXhwIjoxNzEzMDIwMzE4fQ.frYI4YfwUqhj7Qwk1u5D0NSfcgnBf9vYSLSj9vczcn4&t=2023-04-14T14%3A58%3A16.629Z'
+
 	useEffect(() => {
 		const getOrgs = async () => {
-			const res = await fetch(
-				'https://zfvfypwezhwsfphrfcws.supabase.co/storage/v1/object/sign/organisations/organisations.json?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJvcmdhbmlzYXRpb25zL29yZ2FuaXNhdGlvbnMuanNvbiIsImlhdCI6MTY4MTQ3MjM0NiwiZXhwIjoxNzEzMDA4MzQ2fQ.JXmwTuxEOLFEEJdJ52yKdifU1UgctaW0LYDIBvNE-TM&t=2023-04-14T11%3A38%3A44.447Z'
-			);
+			const res = await fetch(WhoWeHelpList);
 
 			if (!res.ok) {
 				throw new Error('Error!');
@@ -50,7 +50,7 @@ const WhoWeHelp = () => {
 		setCurrentPage(1);
 		};
 
-	if (!orgs.length) return <p>ading...</p>;
+	// if (!orgs.length) return <p>ading...</p>;
 
 	return (
 		<>

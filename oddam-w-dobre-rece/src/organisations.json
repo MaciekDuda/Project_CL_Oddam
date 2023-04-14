@@ -85,6 +85,34 @@
 			"name": "Zbiórka dla Ukrainy",
 			"mission": "Zbiórka dla osób terenów ogarniętych wojną",
 			"needs": "meble, ubrania, sprzęt AGD"
+		},
+        {
+			"id": 13,
+			"type": "fundacja",
+			"name": "Wesoły Klaun",
+			"mission": "Pomoc dla dzieci z trudnych rodzin",
+			"needs": "zabawki, ubranania dziecięce"
+		},
+        {
+			"id": 14,
+			"type": "fundacja",
+			"name": "Fabryka Dobra",
+			"mission": "Pomoc w promocji zdrowia i edukacji w krajach Afryki",
+			"needs": "fundusze, wolontariat"
+		},
+        {
+			"id": 15,
+			"type": "fundacja",
+			"name": "Lepsze Dziś",
+			"mission": "Pomoc dla osób z niepełnosprawnoscią",
+			"needs": "sprzęt medyczny, sprzęt rehabilitacyjny, leki"
+		},
+        {
+			"id": 16,
+			"type": "fundacja",
+			"name": "Otwarte Drzwi",
+			"mission": "Pomoc uchodźcom polityczynym, którzy uzyskali azyl w Polsce",
+			"needs": "meble, sprzęt AGD, ubrania"
 		}
 	]
 }
