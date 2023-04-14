@@ -1,7 +1,60 @@
+import { useState, useEffect } from 'react';
+import Pagination from './Pagination';
+
+interface Org {
+	id: number;
+	name: string;
+	type: string;
+	needs: string;
+	mission: string;
+}
+
 const WhoWeHelp = () => {
+	const [orgs, setOrgs] = useState<Org[]>([]);
+	const [cat, setCat] = useState<string>('fundacja');
+	const [currentPage, setCurrentPage] = useState<number>(1);
+	const postsPerPage = 3;
+
+	const handleError = (err: string) => {
+		console.log('Error');
+		console.error('Error');
+	};
+
+	useEffect(() => {
+		const getOrgs = async () => {
+			const res = await fetch(
+				'https://zfvfypwezhwsfphrfcws.supabase.co/storage/v1/object/sign/organisations/organisations.json?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJvcmdhbmlzYXRpb25zL29yZ2FuaXNhdGlvbnMuanNvbiIsImlhdCI6MTY4MTQ3MjM0NiwiZXhwIjoxNzEzMDA4MzQ2fQ.JXmwTuxEOLFEEJdJ52yKdifU1UgctaW0LYDIBvNE-TM&t=2023-04-14T11%3A38%3A44.447Z'
+			);
+
+			if (!res.ok) {
+				throw new Error('Error!');
+			  }
+			
+			  const { organisations } = await res.json();
+			
+			  const filteredArray = organisations.filter(({ type }: Org) => type === cat);
+			
+			  setOrgs(filteredArray);
+			};
+			getOrgs().catch(handleError);
+	}, [cat]);
+
+	const lastPostIndex = currentPage * postsPerPage;
+	const firstPostIndex = lastPostIndex - postsPerPage;
+
+	const currentPosts = orgs.slice(firstPostIndex, lastPostIndex);
+
+	const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+		const target = e.target as HTMLButtonElement;
+		setCat(target.dataset.name!);
+		setCurrentPage(1);
+		};
+
+	if (!orgs.length) return <p>ading...</p>;
+
 	return (
 		<>
-			<section className="help" id='help'>
+			<section className="help" id="help">
 				<div className="help__box">
 					<div className="help__box_head">
 						<p className="help__box_head_title">Komu pomagamy?</p>
@@ -13,46 +66,65 @@ const WhoWeHelp = () => {
 					</div>
 
 					<div className="help__box_orgs">
-
 						<div className="help__box_orgs_buttons">
-							<button className="org_btn">Fundacjom</button>
-							<button className="org_btn">
+							<button
+								className="org_btn"
+								data-name="fundacja"
+								id="button1"
+								onClick={(e) => handleClick(e)}
+							>
+								Fundacjom
+							</button>
+							<button
+								className="org_btn"
+								data-name="ngo"
+								id="button2"
+								onClick={(e) => handleClick(e)}
+							>
 								Organizacjom <br />
 								pozarządowym
 							</button>
-							<button className="org_btn">
+							<button
+								className="org_btn"
+								data-name="zbiórka"
+								id="button3"
+								onClick={(e) => handleClick(e)}
+							>
 								Lokalnym <br />
 								zbiórkom
 							</button>
 						</div>
 
-                        <div className="help__box_orgs_desc">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores ipsa incidunt iusto voluptate assumenda et? Dicta laborum quidem voluptas doloremque voluptates voluptatum corporis explicabo, minus molestias. Libero alias amet!</p>
-                        </div>
+						<div className="help__box_orgs_desc">
+							<p>
+								Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+								Dolores ipsa incidunt iusto voluptate assumenda et? Dicta
+								laborum quidem voluptas doloremque voluptates voluptatum
+								corporis explicabo, minus molestias. Libero alias amet!
+							</p>
+						</div>
 
-                        <ul className="help__box_orgs_list">
-                            <li className="org_item"><h3>Przykładowa fundacja "Pokój na świecie"</h3>
-                            <p className="needs">Stingery, Javeliny, Leopardy</p>
-                            <p className="info">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                                 <hr /></li>
-                            <li className="org_item"><h3>Przykładowa fundacja "Pokój na świecie"</h3>
-                            <p className="needs">Stingery, Javeliny, Leopardy</p>
-                            <p className="info">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                                 <hr /></li>
-                            <li className="org_item"><h3>Przykładowa fundacja "Pokój na świecie"</h3>
-                            <p className="needs">Stingery, Javeliny, Leopardy</p>
-                            <p className="info">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                                 <hr /></li>
-                         
-                            
-                        </ul>
+						<ul className="help__box_orgs_list">
+							{currentPosts.map((org) => {
+								return (
+									<li className="org_item" key={org.id}>
+										<h3>{`"${org.name}"`}</h3>
+										<p className="needs">{org.needs}</p>
+										<p className="info">
+										{org.mission}
+										</p>
+										<hr />
+									</li>
+								);
+							})}
+						</ul>
 
-                        <div className="pagination">
-                            <p>1</p>
-                            <p>2</p>
-                        </div>
-
-
+							<Pagination
+								totalPosts={orgs.length}
+								postsPerPage={postsPerPage}
+								setCurrentPage={setCurrentPage}
+								currentPage={currentPage}
+							/>
 					</div>
 				</div>
 			</section>

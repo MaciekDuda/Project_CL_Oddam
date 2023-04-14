@@ -1,0 +1,91 @@
+{
+	"organisations": [
+		{
+			"id": 1,
+			"type": "fundacja",
+			"name": "Dbam o zdrowie",
+			"mission": "Pomoc osobom znajdującym się w trudnej syuacji życiowej.",
+			"needs": "ubrania, żywność, sprzęt AGD, meble, zabawki"
+		},
+		{
+			"id": 2,
+			"type": "fundacja",
+			"name": "Dla dzieci",
+			"mission": "Pomoc dzieciom z ubogich rodzin",
+			"needs": "ubrania, meble, zabawki"
+		},
+		{
+			"id": 3,
+			"type": "fundacja",
+			"name": "Bez domu",
+			"mission": "Pomoc osobom w kryzysie bezdomności",
+			"needs": "ubrania, żywność, ciepłe koce"
+		},
+		{
+			"id": 4,
+			"type": "fundacja",
+			"name": "Gajusz",
+			"mission": "Pomoc ciężko chorym dzieciom ",
+			"needs": "fundusze, leki, wolontariat"
+		},
+	
+		{
+			"id": 5,
+			"type": "fundacja",
+			"name": "Sedeka",
+			"mission": "Pomoc osobom niepełnosprawym",
+			"needs": "sprzęt medyczny, sprzęt rehabilitacyjny, leki"
+		},
+
+		{
+			"id": 6,
+			"type": "ngo",
+			"name": "PAH",
+			"mission": "Pomoc w kryzysach humanitarnych",
+			"needs": "sprzęt medyczny, leki, żywność, ciepłe koce"
+		},
+        {
+			"id": 7,
+			"type": "ngo",
+			"name": "Ktoś",
+			"mission": "Pomoc osobom samotnym",
+			"needs": "fundusze, wolontariat"
+		},
+        {
+			"id": 8,
+			"type": "ngo",
+			"name": "Wesoła Stonoga",
+			"mission": "Edukacja i wychowanie dzieci",
+			"needs": "art. papiernice, fundusze, wolontariat"
+		},
+        {
+			"id": 9,
+			"type": "ngo",
+			"name": "Bez barier",
+			"mission": "Pomoc rodzinom osób chorych i niepełnosprawnych",
+			"needs": "sprzęt meczyczny, fundusze, wolontariat"
+		},
+        {
+			"id": 10,
+			"type": "ngo",
+			"name": "Człowiek dla zwierząt",
+			"mission": "Pomoc porzuconym zwierzętom domowym",
+			"needs": "karma, ciepłe koce, fundusze"
+		},
+        {
+			"id": 11,
+			"type": "zbiórka",
+			"name": "Zbiórka dla domu dziecka",
+			"mission": "Pomoc dla domu dziecka w Płocku",
+			"needs": "zabawki, ubrania, słodycze"
+		},
+        {
+			"id": 12,
+			"type": "zbiórka",
+			"name": "Zbiórka dla Ukrainy",
+			"mission": "Zbiórka dla osób terenów ogarniętych wojną",
+			"needs": "meble, ubrania, sprzęt AGD"
+		}
+	]
+}
+

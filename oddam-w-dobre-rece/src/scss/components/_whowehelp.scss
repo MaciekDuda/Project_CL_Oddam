@@ -88,21 +88,24 @@
 
             }
 
-            .pagination {
-                display: flex;
-                
-                p {
-                    margin: 0 5px;
-                    padding: 10px;
-                    border: 0.75px solid transparent;
-                    transition: 0.3s all ease-in-out;
+		}
 
-                    &:hover {
-                        color: $grey;
-						border: 0.75px solid $dark;
-                    }
-                }
-            }
+
+		.pagination {
+			display: flex;
+			
+			button {
+				background: none;
+				margin: 0 5px;
+				padding: 10px;
+				border: 0.75px solid transparent;
+				transition: 0.3s all ease-in-out;
+
+				&:hover {
+					color: $grey;
+					border: 0.75px solid $dark;
+				}
+			}
 		}
 	}
 }
