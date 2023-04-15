@@ -13,7 +13,7 @@ const WhoWeHelp = () => {
 	const [orgs, setOrgs] = useState<Org[]>([]);
 	const [cat, setCat] = useState<string>('fundacja');
 	const [currentPage, setCurrentPage] = useState<number>(1);
-	const postsPerPage = 3;
+	const itemsPerPage = 3;
 
 	const handleError = (err: string) => {
 		console.log('Error');
@@ -29,7 +29,7 @@ const WhoWeHelp = () => {
 			if (!res.ok) {
 				throw new Error('Error!');
 			  }
-			
+			console.log(res);
 			  const { organisations } = await res.json();
 			
 			  const filteredArray = organisations.filter(({ type }: Org) => type === cat);
@@ -39,10 +39,10 @@ const WhoWeHelp = () => {
 			getOrgs().catch(handleError);
 	}, [cat]);
 
-	const lastPostIndex = currentPage * postsPerPage;
-	const firstPostIndex = lastPostIndex - postsPerPage;
+	const lastItemIndex = currentPage * itemsPerPage;
+	const firstItemIndex = lastItemIndex - itemsPerPage;
 
-	const currentPosts = orgs.slice(firstPostIndex, lastPostIndex);
+	const currentPosts = orgs.slice(firstItemIndex, lastItemIndex);
 
 	const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
 		const target = e.target as HTMLButtonElement;
@@ -120,8 +120,8 @@ const WhoWeHelp = () => {
 						</ul>
 
 							<Pagination
-								totalPosts={orgs.length}
-								postsPerPage={postsPerPage}
+								totalItems={orgs.length}
+								itemsPerPage={itemsPerPage}
 								setCurrentPage={setCurrentPage}
 								currentPage={currentPage}
 							/>
