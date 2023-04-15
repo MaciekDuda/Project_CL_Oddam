@@ -42,7 +42,7 @@ const WhoWeHelp = () => {
 	const lastItemIndex = currentPage * itemsPerPage;
 	const firstItemIndex = lastItemIndex - itemsPerPage;
 
-	const currentPosts = orgs.slice(firstItemIndex, lastItemIndex);
+	const currentItems = orgs.slice(firstItemIndex, lastItemIndex);
 
 	const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
 		const target = e.target as HTMLButtonElement;
@@ -105,7 +105,7 @@ const WhoWeHelp = () => {
 						</div>
 
 						<ul className="help__box_orgs_list">
-							{currentPosts.map((org) => {
+							{currentItems.map((org) => {
 								return (
 									<li className="org_item" key={org.id}>
 										<h3>{`"${org.name}"`}</h3>
