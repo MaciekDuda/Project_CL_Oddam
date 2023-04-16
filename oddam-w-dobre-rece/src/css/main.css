@@ -454,6 +454,11 @@
 .contact__box .footer img {
   padding: 0 10px;
 }
+.contact .error {
+  color: red;
+  font-size: 12px;
+  font-weight: 800;
+}
 
 .register {
   display: flex;
