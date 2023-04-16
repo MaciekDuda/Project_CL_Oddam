@@ -27,7 +27,7 @@ const WhoWeHelp = () => {
 			const res = await fetch(WhoWeHelpList);
 
 			if (!res.ok) {
-				throw new Error('Error!');
+				throw new Error('Data not loaded!');
 			  }
 			console.log(res);
 			  const { organisations } = await res.json();
@@ -39,8 +39,8 @@ const WhoWeHelp = () => {
 			getOrgs().catch(handleError);
 	}, [cat]);
 
-	const lastItemIndex = currentPage * itemsPerPage;
-	const firstItemIndex = lastItemIndex - itemsPerPage;
+	const lastItemIndex = currentPage * itemsPerPage; //1 * 3 = 3, 2 * 3 = 6 itd
+	const firstItemIndex = lastItemIndex - itemsPerPage; //6 - 3 = 3
 
 	const currentItems = orgs.slice(firstItemIndex, lastItemIndex);
 
