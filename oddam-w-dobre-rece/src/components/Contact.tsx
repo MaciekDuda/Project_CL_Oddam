@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 interface FormValues {
 	name: string;
@@ -32,21 +31,46 @@ const Contact = () => {
 	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
-		if (form.name.trim().length < 1) {
-			setNameCheck(true);
-		} else {
-			setNameCheck(false);
-		}
+			setNameCheck(form.name.trim().length < 1);
+			setMessageCheck(form.message.trim().length < 120);
+
 
 		if (!form.email.includes('@')) {
-			setEmailCheck(true);
+			setEmailCheck(form.email.includes('@'));
 		} else {
 			setEmailCheck(false);
 		}
-		if (form.message.trim().length < 120) {
-			setMessageCheck(true);
-		} else {
-			setMessageCheck(false);
+
+		if (form.name.trim().length > 1 && !emailCheck && !messageCheck) {
+			sendMessage();
+		}
+	};
+
+	const sendMessage = async () => {
+		const res = await fetch(
+			'https://fer-api.coderslab.pl/v1/portfolio/contact',
+			{
+				method: 'POST',
+				body: JSON.stringify(form),
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			}
+		);
+		console.log(res);
+		if (!res.ok) {
+			throw new Error('Dane nie wysłane!');
+		}
+		const answer = await res.json();
+		console.log(answer);
+
+		if (answer.status === 'success') {
+			setSuccess(true);
+			setForm({
+				name: '',
+				email: '',
+				message: '',
+			});
 		}
 	};
 
@@ -67,6 +91,12 @@ const Contact = () => {
 								className="decor"
 							/>
 						</div>
+
+						{success === true ? (
+							<p className="success">
+								Wiadomość została wysłana!<br/>Wkrótce się skontaktujemy.
+							</p>
+						) : null}
 
 						<div className="contact__box_form_inputs">
 							<div className="contact_input">
@@ -110,12 +140,6 @@ const Contact = () => {
 								</p>
 							)}
 						</div>
-
-						{success === true ? (
-							<p className="success-sent">
-								Wiadomość została wysłana!<br></br>Wkrótce się skontaktujemy.
-							</p>
-						) : null}
 
 						<button type="submit">Wyślij</button>
 					</form>
